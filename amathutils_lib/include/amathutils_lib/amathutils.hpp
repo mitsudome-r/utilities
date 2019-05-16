@@ -58,6 +58,7 @@ bool isIntersectLine(const geometry_msgs::Point &_l1_p1, const geometry_msgs::Po
                      const geometry_msgs::Point &_l2_p1, const geometry_msgs::Point &_l2_p2);
 int isPointLeftFromLine(const geometry_msgs::Point &_target, const geometry_msgs::Point &_line_p1,
                         const geometry_msgs::Point &_line_p2);
+double distanceFromSegment( const geometry_msgs::Point &_l1, const geometry_msgs::Point &_l2, const geometry_msgs::Point &_p);
 double getPoseYawAngle(const geometry_msgs::Pose &_pose);
 double calcPosesAngleDiffRaw(const geometry_msgs::Pose &p_from, const geometry_msgs::Pose &_p_to);
 double radianNormalize(double _angle);
